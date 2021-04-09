@@ -54,6 +54,7 @@
 
 
 <div >
+	<input placeholder="asdf"/>
 	<p> Total count: {count} </p>
 <button class="countButton" on:click={plus1}>
 	+1 
@@ -64,8 +65,8 @@
 </button>
 {#if count%2 === 0}
 <p>Even</p>
-{/if}
-{#if count%2 != 0}
+
+{:else}
 <p>Odd</p>
 {/if}
 </div>
